@@ -1,0 +1,8 @@
+[Unit]
+Description=PlayMP3
+After=multi-user.target
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /home/pi/Mp3Player-master/play.py
+[Install]
+WantedBy=multi-user.target
